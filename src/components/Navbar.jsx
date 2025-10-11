@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import GradientText from "../assets/GradientText";
 
 const Navbar = () => {
     const [active, setActive] = useState(false);
@@ -23,7 +24,14 @@ const Navbar = () => {
             <div className="logo">
                 <h1 className="text-3xl font-bold text-black p-1 md:bg-transparent 
                     md:text-white">
-                    PortoKautsar
+                    <GradientText
+                        colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                        animationSpeed={3}
+                        showBorder={false}
+                        className="custom-class"
+                    >
+                        PortoKautsar
+                    </GradientText>
                 </h1>
             </div>
             <ul className={`menu flex items-center sm:gap-10 gap-4 md:static fixed left-1/2 -translate-x-1/2 
