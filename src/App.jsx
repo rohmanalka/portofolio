@@ -1,6 +1,7 @@
 import LightRays from "./assets/LightRays"
 import ShinyText from "./assets/ShinyText"
 import TextType from "./assets/TextType"
+import ProfileCard from './assets/ProfileCard'
 import { listTools, listProyek, listSertif } from "./data"
 
 function App() {
@@ -60,7 +61,20 @@ function App() {
           </div>
         </div>
         <div className="w-[400px] h-[500px] md:ml-auto">
-            <img src='assets/profile.png' alt="Hero Image" className="w-[500px] md:ml-auto" loading="lazy" />
+            {/* <img src='assets/profile.png' alt="Hero Image" className="w-[500px] md:ml-auto" loading="lazy" /> */}
+            <ProfileCard 
+              name="M Rohman Al K"
+              title="Software Engineer"
+              handle="rohmanalka_"
+              status="Student"
+              contactText="Contact Me"
+              avatarUrl="/assets/profile.png"
+              iconUrl="/assets/codeIcon.png"
+              showUserInfo={true}
+              enableTilt={true}
+              enableMobileTilt={false}
+              onContactClick={() => window.open("https://wa.me/6287856432962?text=Halo%20saya%20tertarik%20dengan%20portofolio%20Anda!", "_blank")}
+            />
         </div>
       </div>
       {/* Hero Section */}
