@@ -3,11 +3,17 @@ import ShinyText from "./assets/ShinyText"
 import TextType from "./assets/TextType"
 import ProfileCard from './assets/ProfileCard'
 import { listTools, listProyek, listSertif } from "./data"
+import TargetCursor from "./assets/TargetCursor"
 
 function App() {
 
   return (
     <>
+    <div className="relative min-h-screen">
+      <TargetCursor
+        spinDuration={2}
+        hideDefaultCursor={true}
+      />
       <div className="fixed inset-0 -z-10">
         <LightRays 
           raysOrigin="top-center"
@@ -22,6 +28,7 @@ function App() {
           className="custom-rays"
         />
       </div>
+      <div className="relative z-10">
       {/* Hero Section */}
       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
         <div>
@@ -50,11 +57,11 @@ function App() {
             Saya memiliki minat besar dalam perkembangan dunia teknologi untuk menciptakan solusi digital yang bermanfaat dan efisien.
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
-            <a href="https://drive.google.com/file/d/1dZlG-jD20vZJRlRqNTkZnZf_FKuQ4V1R/view?usp=sharing" target="_blank" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600">
+            <a href="https://drive.google.com/file/d/1dZlG-jD20vZJRlRqNTkZnZf_FKuQ4V1R/view?usp=sharing" target="_blank" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600 cursor-target">
               <i className="ri-download-2-line ri-lg pr-2"></i>
               Download CV
             </a>
-            <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
+            <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 cursor-target">
               Lihat Proyek
               <i className="ri-arrow-down-line ri-lg pl-2"></i>
             </a>
@@ -214,6 +221,8 @@ function App() {
           </form>
         </div>
         {/* Contact Section */}
+      </div>
+    </div>
     </>
   )
 }
