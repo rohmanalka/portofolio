@@ -1,5 +1,6 @@
 import LightRays from "./assets/LightRays"
 import ShinyText from "./assets/ShinyText"
+import TextType from "./assets/TextType"
 import { listTools, listProyek, listSertif } from "./data"
 
 function App() {
@@ -27,15 +28,21 @@ function App() {
             <img src="assets/profile.jpg" alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
             <p>
               <ShinyText
-                  text="Tiada yang lebih indah dari rencana Tuhan 😎" 
-                  disabled={false} 
-                  speed={3} 
-                  className='custom-class' 
+                text="Tiada yang lebih indah dari rencana Tuhan 😎" 
+                disabled={false} 
+                speed={3} 
+                className='custom-class' 
               />
             </p>
           </div>
           <h1 className="text-3xl/tight font-bold mb-6">
-            Hi, Saya Muhammad Rohman Al Kautsar
+            <TextType
+              text={["Hi, Saya Muhammad Rohman Al Kautsar", "Ayo Cari Tau Tentang Saya"]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
           </h1>
           <p className="text-base/loose mb-6 opacity-50">
             Saya Mahasiswa Politeknik Negeri Malang, jurusan Sistem Informasi Bisnis dengan fokus pada pengembangan software.
