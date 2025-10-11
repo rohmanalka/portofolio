@@ -1,9 +1,25 @@
+import LightRays from "./assets/LightRays"
 import { listTools, listProyek, listSertif } from "./data"
 
 function App() {
 
   return (
     <>
+      <div className="fixed inset-0 -z-10">
+        <LightRays 
+          raysOrigin="top-center"
+          raysColor="#00ffff"
+          raysSpeed={1.5}
+          lightSpread={0.8}
+          rayLength={1.2}
+          followMouse={true}
+          mouseInfluence={0.1}
+          noiseAmount={0.1}
+          distortion={0.05}
+          className="custom-rays"
+        />
+      </div>
+      {/* Hero Section */}
       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
         <div>
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
