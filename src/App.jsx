@@ -1,4 +1,5 @@
 import LightRays from "./assets/LightRays"
+import ShinyText from "./assets/ShinyText"
 import { listTools, listProyek, listSertif } from "./data"
 
 function App() {
@@ -25,7 +26,12 @@ function App() {
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             <img src="assets/profile.jpg" alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
             <p>
-              Tiada yang lebih indah dari rencana tuhan
+              <ShinyText
+                  text="Tiada yang lebih indah dari rencana Tuhan 😎" 
+                  disabled={false} 
+                  speed={3} 
+                  className='custom-class' 
+              />
             </p>
           </div>
           <h1 className="text-3xl/tight font-bold mb-6">
