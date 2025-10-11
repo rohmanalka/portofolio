@@ -8,6 +8,10 @@ import 'remixicon/fonts/remixicon.css'
 import Footer from './components/Footer.jsx'
 import Preloader from './components/PreLoader.jsx'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Preloader />
