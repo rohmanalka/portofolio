@@ -92,7 +92,7 @@ export const listTools = [
 
 import Proyek1 from "/assets/proyek/proyek1.png";
 import Proyek2 from "/assets/proyek/proyek2.png";
-import Proyek3 from "/assets/proyek/proyek3.webp";
+// import Proyek3 from "/assets/proyek/proyek3.webp";
 
 export const listProyek = [
   {
@@ -113,15 +113,15 @@ export const listProyek = [
     dad: "300",
     link: "https://github.com/rohmanalka/PBLTanggungan"
   },
-  {
-    id: 3,
-    gambar: Proyek3,
-    nama: "Sistem Informasi Classroom",
-    desk: "Sistem berbasis Laravel untuk mempermudah proses pembelajaran antara dosen dan mahasiswa dengan menyediakan fitur manajemen kelas, distribusi tugas, pengumpulan tugas secara daring, serta pemantauan aktivitas akademik",
-    tools: ["Laravel", "Bootstrap", "MySQL"],
-    dad: "400",
-    link: "https://github.com/rohmanalka/PWLUTS_Classroom"
-  }
+  // {
+  //   id: 3,
+  //   gambar: Proyek3,
+  //   nama: "Sistem Informasi Classroom",
+  //   desk: "Sistem berbasis Laravel untuk mempermudah proses pembelajaran antara dosen dan mahasiswa dengan menyediakan fitur manajemen kelas, distribusi tugas, pengumpulan tugas secara daring, serta pemantauan aktivitas akademik",
+  //   tools: ["Laravel", "Bootstrap", "MySQL"],
+  //   dad: "400",
+  //   link: "https://github.com/rohmanalka/PWLUTS_Classroom"
+  // }
 ];
 
 import Sertif1 from "/assets/sertif/sertif1.jpg";
