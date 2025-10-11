@@ -34,24 +34,24 @@ const Navbar = () => {
                     </GradientText>
                 </h1>
             </div>
-            <ul className={`menu flex items-center sm:gap-10 gap-4 md:static fixed left-1/2 -translate-x-1/2 
+            <ul className={`menu flex items-center sm:gap-10 gap-3 md:static fixed left-1/2 -translate-x-1/2 
                 md:-translate-x-0 md:opacity-100 bg-white/30 backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl
                 md:bg-transparent transition-all md:transition-none z-40 ${
                     active ? "top-0 opacity-100" : "-top-10 opacity-0"}`}>
                 <li>
-                    <a href="#beranda" className="sm:text-lg text-base font-medium cursor-target">Beranda</a>
+                    <a href="#beranda" className="sm:text-lg text-[13px] font-medium cursor-target">Beranda</a>
                 </li>
                 <li>
-                    <a href="#tentang" className="sm:text-lg text-base font-medium cursor-target">Tentang</a>
+                    <a href="#tentang" className="sm:text-lg text-[13px] font-medium cursor-target">Tentang</a>
                 </li>
                 <li>
-                    <a href="#proyek" className="sm:text-lg text-base font-medium cursor-target">Proyek</a>
+                    <a href="#proyek" className="sm:text-lg text-[13px] font-medium cursor-target">Proyek</a>
                 </li>
                 <li>
-                    <a href="#sertif" className="sm:text-lg text-base font-medium cursor-target">Sertifikat</a>
+                    <a href="#sertif" className="sm:text-lg text-[13px] font-medium cursor-target">Sertifikat</a>
                 </li>
                 <li>
-                    <a href="#kontak" className="sm:text-lg text-base font-medium cursor-target">Contact</a>
+                    <a href="#kontak" className="sm:text-lg text-[13px] font-medium cursor-target">Contact</a>
                 </li>
             </ul>
         </div>

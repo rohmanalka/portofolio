@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import LightRays from "./assets/LightRays"
 import ShinyText from "./assets/ShinyText"
 import TextType from "./assets/TextType"
@@ -6,14 +7,27 @@ import { listTools, listProyek, listSertif } from "./data"
 import TargetCursor from "./assets/TargetCursor"
 
 function App() {
+  const [isDesktop, setIsDesktop] = useState(true)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768)
+    }
+
+    handleResize() // cek saat mount
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   return (
     <>
     <div className="relative min-h-screen">
-      <TargetCursor
-        spinDuration={2}
-        hideDefaultCursor={true}
-      />
+      {isDesktop && (
+        <TargetCursor
+          spinDuration={2}
+          hideDefaultCursor={true}
+        />
+      )}
       <div className="fixed inset-0 -z-10">
         <LightRays 
           raysOrigin="top-center"
