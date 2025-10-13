@@ -84,8 +84,8 @@ function App() {
         <div className="w-[400px] h-[500px] md:ml-auto">
             {/* <img src='assets/profile.png' alt="Hero Image" className="w-[500px] md:ml-auto" loading="lazy" /> */}
             <ProfileCard 
-              name="M Rohman Al K"
-              title="Software Engineer"
+              name="M Rohman Al Kautsar"
+              title="Full Stack Enthusiast"
               handle="rohmanalka_"
               status="Student"
               contactText="Contact Me"

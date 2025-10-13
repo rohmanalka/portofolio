@@ -8,9 +8,4 @@
 
 html, body {
   overflow-x: hidden;
-  overscroll-behavior: none;
-}
-
-* {
-  -webkit-transform: translateZ(0);
 }

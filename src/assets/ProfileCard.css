@@ -61,7 +61,7 @@
 }
 
 .pc-card {
-  height: 75svh;
+  height: 70svh;
   max-height: 540px;
   display: grid;
   aspect-ratio: 0.718;
@@ -256,7 +256,7 @@
 }
 
 .pc-avatar-content .avatar {
-  width: 100%;
+  width: 90%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%) scale(1);
@@ -304,8 +304,8 @@
 }
 
 .pc-mini-avatar {
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -327,14 +327,14 @@
 }
 
 .pc-handle {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1;
 }
 
 .pc-status {
-  font-size: 14px;
+  font-size: 11px;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1;
 }
@@ -342,8 +342,8 @@
 .pc-contact-btn {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  padding: 8px 16px;
-  font-size: 14px;
+  padding: 10px 6px;
+  font-size: 11px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
@@ -374,16 +374,15 @@
 .pc-details {
   width: 100%;
   position: absolute;
-  top: 3em;
+  top: 1em;
   display: flex;
   flex-direction: column;
 }
 
 .pc-details h3 {
-  font-weight: 600;
-  margin: 0;
-  font-size: min(5svh, 3em);
-  margin: 0;
+  font-weight: 400;
+  font-size: min(4svh, 2em);
+  margin: 5px;
   background-image: linear-gradient(to bottom, #fff, #6f6fbe);
   background-size: 1em 1.5em;
   -webkit-text-fill-color: transparent;
@@ -392,11 +391,11 @@
 }
 
 .pc-details p {
-  font-weight: 600;
+  font-weight: 300;
   position: relative;
   top: -12px;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 15px;
   margin: 0 auto;
   width: min-content;
   background-image: linear-gradient(to bottom, #fff, #4a4ac0);
