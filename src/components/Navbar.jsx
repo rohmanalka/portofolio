@@ -34,8 +34,8 @@ const Navbar = () => {
                     </GradientText>
                 </h1>
             </div>
-            <ul className={`menu flex items-center sm:gap-10 gap-3 md:static fixed left-1/2 -translate-x-1/2 
-                md:-translate-x-0 md:opacity-100 bg-white/30 backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl
+            <ul className={`menu flex items-center sm:gap-10 gap-3 md:static fixed top-0 left-0 w-full justify-center
+                md:w-auto md:justify-start md:opacity-100 bg-white/30 backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl
                 md:bg-transparent transition-all md:transition-none z-40 ${
                     active ? "top-0 opacity-100" : "-top-10 opacity-0"}`}>
                 <li>

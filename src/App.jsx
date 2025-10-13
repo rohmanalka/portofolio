@@ -14,7 +14,7 @@ function App() {
       setIsDesktop(window.innerWidth >= 768)
     }
 
-    handleResize() // cek saat mount
+    handleResize()
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
   }, [])
