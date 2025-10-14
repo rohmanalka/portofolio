@@ -71,11 +71,11 @@ function App() {
             Saya memiliki minat besar dalam perkembangan dunia teknologi untuk menciptakan solusi digital yang bermanfaat dan efisien.
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
-            <a href="https://drive.google.com/file/d/1dZlG-jD20vZJRlRqNTkZnZf_FKuQ4V1R/view?usp=sharing" target="_blank" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600 cursor-target">
+            <a href="https://drive.google.com/file/d/1dZlG-jD20vZJRlRqNTkZnZf_FKuQ4V1R/view?usp=sharing" target="_blank" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600 cursor-target sm:text-[16px] text-[12px]">
               <i className="ri-download-2-line ri-lg pr-2"></i>
               Download CV
             </a>
-            <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 cursor-target">
+            <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 cursor-target sm:text-[16px] text-[12px]">
               Lihat Proyek
               <i className="ri-arrow-down-line ri-lg pl-2"></i>
             </a>
