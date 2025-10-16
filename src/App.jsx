@@ -168,8 +168,9 @@ function App() {
                       <p className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
                     ))}
                   </div>
-                  <div className="mt-8 text-center">
-                    <a href={proyek.link} className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 cursor-target">Dokumentasi</a>
+                  <div className="mt-8 w-full flex justify-between items-center">
+                    <a href={proyek.link} className="bg-violet-700 px-6 py-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 text-center w-1/2 mr-2 cursor-target">Dokumentasi</a>
+                    <a href={proyek.figma} className="bg-violet-700 px-6 py-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 text-center w-1/2 ml-2 cursor-target">Prototype</a>
                   </div>
                 </div>
               </div>
